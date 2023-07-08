@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-07-07T20:46:31&#43;08:00</updated>
+    <updated>2023-07-08T23:12:23&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -16,4 +16,31 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.115.0">Hugo</generator>
+        <entry>
+            <title type="text">Hello World</title>
+            <link rel="alternate" type="text/html" href="https://lychee-h.github.io/life/hello-world/" />
+            <id>https://lychee-h.github.io/life/hello-world/</id>
+            <updated>2023-07-07T21:41:16&#43;08:00</updated>
+            <published>2023-07-01T13:41:18&#43;08:00</published>
+            <author>
+                    <name>Henry</name>
+                    <uri>https://lychee-h.github.io/</uri>
+                    <email>yihang.ni@outlook.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"></summary>
+            
+                <content type="html"></content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
 </feed>
