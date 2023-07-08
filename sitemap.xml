@@ -2,25 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lychee-h.github.io/</loc>
-    <lastmod>2023-07-07T21:41:24+08:00</lastmod>
-  </url><url>
-    <loc>https://lychee-h.github.io/tech/java/</loc>
-    <lastmod>2023-07-07T21:39:03+08:00</lastmod>
-  </url><url>
-    <loc>https://lychee-h.github.io/tech/</loc>
-    <lastmod>2023-07-07T21:39:03+08:00</lastmod>
-  </url><url>
-    <loc>https://lychee-h.github.io/about/</loc>
-    <lastmod>2023-07-07T21:41:24+08:00</lastmod>
-  </url><url>
-    <loc>https://lychee-h.github.io/life/hello-world/</loc>
-    <lastmod>2023-07-07T21:41:16+08:00</lastmod>
-  </url><url>
-    <loc>https://lychee-h.github.io/life/</loc>
-    <lastmod>2023-07-07T21:41:16+08:00</lastmod>
-  </url><url>
     <loc>https://lychee-h.github.io/categories/</loc>
+  </url><url>
+    <loc>https://lychee-h.github.io/</loc>
   </url><url>
     <loc>https://lychee-h.github.io/tags/</loc>
   </url>
