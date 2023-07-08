@@ -1,2 +1,2 @@
-# 个人博客
-lychee-h.github.io
+# lychee-h.github.io
+个人博客
