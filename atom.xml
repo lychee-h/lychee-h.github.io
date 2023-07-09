@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-07-09T16:13:38&#43;08:00</updated>
+    <updated>2023-07-09T16:23:25&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">Git航行指南：踏上迷人的代码管理之旅</title>
             <link rel="alternate" type="text/html" href="https://lychee-h.github.io/tech/git%E8%88%AA%E8%A1%8C%E6%8C%87%E5%8D%97%E8%B8%8F%E4%B8%8A%E8%BF%B7%E4%BA%BA%E7%9A%84%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E4%B9%8B%E6%97%85/" />
             <id>https://lychee-h.github.io/tech/git%E8%88%AA%E8%A1%8C%E6%8C%87%E5%8D%97%E8%B8%8F%E4%B8%8A%E8%BF%B7%E4%BA%BA%E7%9A%84%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E4%B9%8B%E6%97%85/</id>
-            <updated>2023-07-09T16:04:33&#43;08:00</updated>
+            <updated>2023-07-09T16:23:08&#43;08:00</updated>
             <published>2023-07-08T14:03:45&#43;08:00</published>
             
             <summary type="html">Git航行指南：踏上迷人的代码管理之旅 1、版本控制 所谓版本控制(Revision co……</summary>
@@ -51,7 +51,7 @@
 &lt;h4 id=&#34;3git工作原理&#34;&gt;3、Git工作原理&lt;/h4&gt;
 &lt;p&gt;&lt;strong&gt;Git分区&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Git本有三个区域，工作区(work folder)、暂存区(stage)、本地仓库(local repo)，再加上远程的git仓库(remote repo)就可以分为四个区域。如下图&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;https://lychee-h.github.io/tech/git%E8%88%AA%E8%A1%8C%E6%8C%87%E5%8D%97%E8%B8%8F%E4%B8%8A%E8%BF%B7%E4%BA%BA%E7%9A%84%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E4%B9%8B%E6%97%85/#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;所示。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5CBlog%5Ccontent%5Ctech%5Cassets%5Cgit_principle.png&#34; alt=&#34;Git&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/git_principle.png&#34; alt=&#34;Git&#34;&gt;&lt;/p&gt;
 &lt;p&gt;fork意为分叉，你可以在GitHub上fork别人的项目到自己的仓库，此时流程如下。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;D:%5Cmarkdown%5Cassets%5Cgit_fork.png&#34; alt=&#34;Working with Git | Chiamaka Ikeanyi&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Git工作流程&lt;/strong&gt;&lt;/p&gt;
