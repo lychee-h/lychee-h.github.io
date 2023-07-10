@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-07-09T21:00:37&#43;08:00</updated>
+    <updated>2023-07-10T21:33:14&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -90,7 +90,7 @@
 &lt;h4 id=&#34;5片源版本&#34;&gt;5、片源版本&lt;/h4&gt;
 &lt;p&gt;①.REPACK，重制版。新片刚出时，有些电影压制小组，为了抢时间首发，难免乱中出错，导致视频压制错误，他们会发布REPACK来解决这些问题。增加Repack字眼，以区别上一版本，方便辨识。&lt;/p&gt;
 &lt;p&gt;②.PROPER，优化版。Proper说明发布的版本比前一版本更好。&lt;/p&gt;
-&lt;p&gt;③.Director&#39;s Cut，导演剪辑版。导演剪辑版，按导演拍摄电影的意愿剪辑的。因为影院上映的很多导演都没有优先剪辑权，要受投资方、制片人、市场等因素限制，不能按导演意思行事。该版本主要用于碟片发行中，因为出于商业的、票房的原因，在影院上映的影片未必是导演最终剪辑后的版本。故而碟商们推出了所谓导演剪辑版，与影院版有所区别，也是为了满足一部分追求“原汁原味”的观众的要求，同时多了一条生财之道。&lt;/p&gt;
+&lt;p&gt;③.Director&amp;rsquo;s Cut，导演剪辑版。导演剪辑版，按导演拍摄电影的意愿剪辑的。因为影院上映的很多导演都没有优先剪辑权，要受投资方、制片人、市场等因素限制，不能按导演意思行事。该版本主要用于碟片发行中，因为出于商业的、票房的原因，在影院上映的影片未必是导演最终剪辑后的版本。故而碟商们推出了所谓导演剪辑版，与影院版有所区别，也是为了满足一部分追求“原汁原味”的观众的要求，同时多了一条生财之道。&lt;/p&gt;
 &lt;p&gt;④.Unrated/Theatrical.Cut，未分级版/剧场版。根据分级审查区分： 主要分为公映版和未分级版(Unrated）。MPAA(美国电影协会)根据电影的内容，会评定一个等级，如：R、NC-17、PG13、PG、G等。&lt;/p&gt;
 &lt;p&gt;⑤.LIMITED，限制级版。LIMITED电影指该电影只在有限的电影院放映，通常少于250家。通常较小的电影(比如艺术电影)的发行是LIMETED。&lt;/p&gt;
 &lt;p&gt;⑥. Extended，加长版。情形和导演剪辑版类似，很多的加长版是用来圈钱的,有的干脆就是把花絮里的删除段落直接加进去,也就长了几分钟而已。也有很厚道的,比如指环王的加长版,一部就加长了近50分钟,肯定对剧情有影响的。&lt;/p&gt;
