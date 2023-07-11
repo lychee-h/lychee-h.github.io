@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 12 Jul 2023 00:14:23 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 12 Jul 2023 00:26:30 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://lychee-h.github.io/rss.xml" />
         
@@ -44,7 +44,7 @@
 &lt;center&gt;
     &lt;img style=&#34;border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/字符集_苏州码子.JPG&#34;&gt;
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/字符集_苏州码子.jpg&#34;&gt;
     &lt;br&gt;
     &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -55,13 +55,14 @@
 &lt;p&gt;字符编码（Character Encoding）：所有数据在计算机上存储，都是以二进制01的格式进行存储。为了存储字符，需要一种映射关系将字符与码点进行对应。&lt;/p&gt;
 &lt;p&gt;字符集（Charset）：可以认为字符编码集和字符编码构成字符集。&lt;/p&gt;
 &lt;p&gt;以上几个概念并不用严格区分，根据语境的不同含义可能也不同。&lt;/p&gt;
+&lt;hr&gt;
 &lt;h3 id=&#34;字符集&#34;&gt;字符集&lt;/h3&gt;
 &lt;h4 id=&#34;字符集的分类&#34;&gt;字符集的分类&lt;/h4&gt;
 &lt;p&gt;常见的字符集可分为以下几种：&lt;/p&gt;
 &lt;center&gt;
     &lt;img style=&#34;border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/字符集_分类.PNG&#34;&gt;
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/字符集_分类.png&#34;&gt;
     &lt;br&gt;
     &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -74,7 +75,7 @@
 &lt;center&gt;
     &lt;img style=&#34;border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/字符集_ascii.JPG&#34;&gt;
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/字符集_ascii.jpg&#34;&gt;
     &lt;br&gt;
     &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -87,7 +88,7 @@
 &lt;center&gt;
     &lt;img style=&#34;border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/字符集_GBK.PNG&#34;&gt;
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/字符集_GBK.png&#34;&gt;
     &lt;br&gt;
     &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
@@ -102,7 +103,8 @@
 &lt;li&gt;UTF-32：固定使用4个字节保存。&lt;/li&gt;
 &lt;li&gt;UTF-8：用1-4个字节保存。兼容ASCII码，一个英文占&lt;strong&gt;1个字符&lt;/strong&gt;，一个简体中文占&lt;strong&gt;3个字符&lt;/strong&gt;。将码点转为无符号二进制数后填入1110XXXX-10XXXXXX-10XXXXXX即可。所以，汉字字符对应字符为&lt;strong&gt;负数&lt;/strong&gt;，英文字符对应字符为&lt;strong&gt;正数&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;java中的编码&#34;&gt;Java中的编码&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;java中的编码&#34;&gt;Java中的编码&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;内码&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;内码是程序内部使用的字符编码，特别是某种语言实现其char或String类型在内存里用的内部编码。Java规定了字符的内码要用UTF-16编码。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;外码&lt;/strong&gt;&lt;/p&gt;
