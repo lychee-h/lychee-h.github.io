@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 12 Jul 2023 00:26:30 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 12 Jul 2023 20:35:30 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://lychee-h.github.io/rss.xml" />
         
@@ -339,7 +339,28 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;master主分支应该非常稳定，用来发布新版本，一般不允许在上面工作，工作一般新建dev分支上工作，工作完后合并到主分支。&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;h4 id=&#34;7开发推荐流程&#34;&gt;7、开发推荐流程&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1.git clone // 到本地
+2.git checkout -b xxx 切换至新分支xxx（相当于复制了remote的仓库到本地的xxx分支上）
+3.修改或者添加本地代码（部署在硬盘的源文件上）
+4.git diff 查看自己对代码做出的改变
+5.git add 上传更新后的代码至暂存区
+6.git commit 可以将暂存区里更新后的代码更新到本地git
+7.git push origin xxx 将本地的xxxgit分支上传至github上的git
+----------------------------------------------------------------------------------------------
+（如果在写自己的代码过程中发现远端GitHub上代码出现改变）
+1.git checkout main 切换回main分支
+2.git pull origin master(main) 将远端修改过的代码再更新到本地
+3.git checkout xxx 回到xxx分支
+4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容
+（中途可能会出现，rebase conflict ----&amp;gt;手动选择保留哪段代码）
+5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上（-f ---&amp;gt;强行）
+6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit
+----------------------------------------------------------------------------------------------
+远端完成更新后
+1.git branch -d xxx 删除本地的git分支
+2.git pull origin master 再把远端的最新代码拉至本地
+&lt;/code&gt;&lt;/pre&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
