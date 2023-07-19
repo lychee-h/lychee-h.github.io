@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-07-13T15:21:45&#43;08:00</updated>
+    <updated>2023-07-19T21:01:12&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -16,6 +16,38 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.115.0">Hugo</generator>
+        <entry>
+            <title type="text">有趣的宿命论：萨马拉城之约</title>
+            <link rel="alternate" type="text/html" href="https://lychee-h.github.io/life/new/" />
+            <id>https://lychee-h.github.io/life/new/</id>
+            <updated>2023-07-18T20:52:26&#43;08:00</updated>
+            <published>2023-07-18T20:43:16&#43;08:00</published>
+            
+            <summary type="html">巴格达的一个商人派遣他的仆人到市场去采购食物。 不久，仆人回到家，浑身颤抖，告诉商人：……</summary>
+            
+                <content type="html">&lt;p&gt;巴格达的一个商人派遣他的仆人到市场去采购食物。&lt;/p&gt;
+&lt;p&gt;不久，仆人回到家，浑身颤抖，告诉商人：“在那个集市上，我被一个人推搡，他身着黑袍，我知道他是死神。死神对我做了一个恐吓的手势，我知道我大限将至，但我不相信命运，也不相信死神。”&lt;/p&gt;
+&lt;p&gt;仆人借着商人的马，迅速地逃到距离巴格达约75英里的萨马拉。这么远的距离，仆人相信死神不会找到他。&lt;/p&gt;
+&lt;p&gt;商人随后来到集市，看见了仆人所说的身着黑袍的死神。&lt;/p&gt;
+&lt;p&gt;商人问死神：“你为什么要对我的仆人做出威胁的手势？”&lt;/p&gt;
+&lt;p&gt;死神回答说：“这不是一个威胁的手势，这只是一个让我惊喜的开始。我很惊讶地看到你的仆人在巴格达；我做那个手势的意思是：今晚我在萨马拉等着他的到来。”&lt;/p&gt;
+&lt;p&gt;There was a merchant in Baghdad who sent his servant to market to buy provisions, and in a little while the servant came back, white and trembling, and said, “Master, just now when I was in the marketplace I was jostled by a woman in the crowd, and when I turned I saw it was Death that had jostled me. She looked at me and made a threatening gesture. Now, lend me your horse, and I will ride away from this city and avoid my fate. I will go to Samarra and there Death will not find me.”&lt;/p&gt;
+&lt;p&gt;The merchant lent him his horse, and the servant mounted it, and he dug his spurs in its flanks and as fast as the horse could gallop, he went.&lt;/p&gt;
+&lt;p&gt;Then the merchant went down to the marketplace and he saw Death disguised as a woman standing in the crowd, and he came to her and said, “Why did you make a threatening gesture to my servant when you saw him this morning?” “That was not a threatening gesture,” the woman said. “It was only an expression of surprise. I was astonished to see him in Baghdad, for I had an appointment with him tonight in Samarra.”&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Hello World</title>
             <link rel="alternate" type="text/html" href="https://lychee-h.github.io/life/hello-world/" />
