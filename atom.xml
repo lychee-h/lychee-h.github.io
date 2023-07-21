@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-07-19T21:01:12&#43;08:00</updated>
+    <updated>2023-07-21T21:56:33&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -17,9 +17,38 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.115.0">Hugo</generator>
         <entry>
+            <title type="text">N卡驱动安装失败解决方法</title>
+            <link rel="alternate" type="text/html" href="https://lychee-h.github.io/life/n%E5%8D%A1%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" />
+            <id>https://lychee-h.github.io/life/n%E5%8D%A1%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85%E5%A4%B1%E8%B4%A5%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+            <updated>2023-07-21T21:56:21&#43;08:00</updated>
+            <published>2023-07-21T21:52:22&#43;08:00</published>
+            
+            <summary type="html">N卡驱动按装出现一个错误，问题出现原因未知。 NVIDIA GeForce Experience/Quadro Experience应用程序的安装……</summary>
+            
+                <content type="html">&lt;p&gt;N卡驱动按装出现一个错误，问题出现原因未知。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/image-20230720204132173.png&#34; alt=&#34;image-20230720204132173&#34;&gt;&lt;/p&gt;
+&lt;p&gt;NVIDIA GeForce Experience/Quadro Experience应用程序的安装程序包或NVIDIA图形驱动程序有时会遇到一般故障，而这些故障并不能准确地确定错误情况。这些错误可能是由不正确的系统状态引起的。&lt;/p&gt;
+&lt;p&gt;如果软件安装失败，最好的第一步是重新启动并再次尝试安装。&lt;/p&gt;
+&lt;p&gt;如果不可以，打开文件夹C:\ProgramData\NVIDIA Corporation\Downloader，里面下载了驱动安装包，手动安装。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/image-20230720204451984.png&#34; alt=&#34;image-20230720204451984&#34;&gt;&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">有趣的宿命论：萨马拉城之约</title>
-            <link rel="alternate" type="text/html" href="https://lychee-h.github.io/life/new/" />
-            <id>https://lychee-h.github.io/life/new/</id>
+            <link rel="alternate" type="text/html" href="https://lychee-h.github.io/life/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%AE%BF%E5%91%BD%E8%AE%BA%E8%90%A8%E9%A9%AC%E6%8B%89%E5%9F%8E%E4%B9%8B%E7%BA%A6/" />
+            <id>https://lychee-h.github.io/life/%E6%9C%89%E8%B6%A3%E7%9A%84%E5%AE%BF%E5%91%BD%E8%AE%BA%E8%90%A8%E9%A9%AC%E6%8B%89%E5%9F%8E%E4%B9%8B%E7%BA%A6/</id>
             <updated>2023-07-18T20:52:26&#43;08:00</updated>
             <published>2023-07-18T20:43:16&#43;08:00</published>
             
