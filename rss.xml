@@ -23,187 +23,67 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Wed, 16 Aug 2023 23:53:56 &#43;0800</lastBuildDate>
+        <lastBuildDate>Thu, 31 Aug 2023 16:05:59 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://lychee-h.github.io/rss.xml" />
         
         
             <item>
-                <title>冰与火之歌-七大王国和九大家族</title>
-                <link>https://lychee-h.github.io/life/%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F_%E4%B8%83%E5%A4%A7%E7%8E%8B%E5%9B%BD%E4%B8%8E%E4%B9%9D%E5%A4%A7%E5%AE%B6%E6%97%8F/</link>
-                <guid isPermaLink="true">https://lychee-h.github.io/life/%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F_%E4%B8%83%E5%A4%A7%E7%8E%8B%E5%9B%BD%E4%B8%8E%E4%B9%9D%E5%A4%A7%E5%AE%B6%E6%97%8F/</guid>
-                <pubDate>Mon, 31 Jul 2023 22:23:46 &#43;0800</pubDate>
+                <title>广告「杀」完计划-iPhone/iPad端</title>
+                <link>https://lychee-h.github.io/life/%E5%B9%BF%E5%91%8A%E6%9D%80%E5%AE%8C%E8%AE%A1%E5%88%92/</link>
+                <guid isPermaLink="true">https://lychee-h.github.io/life/%E5%B9%BF%E5%91%8A%E6%9D%80%E5%AE%8C%E8%AE%A1%E5%88%92/</guid>
+                <pubDate>Thu, 31 Aug 2023 14:06:48 &#43;0800</pubDate>
                 
                 
                 
-                    <description>&lt;p&gt;在“冰与火”的世界分里为西方大陆和东方大陆。西方大陆的北方是冰墙，隔开北方的冰雪世界；南方是七个王国组成的。而东方大陆则是巨大的草原和沙漠。&lt;/p&gt;
-&lt;p&gt;东方大陆有一些港口城市是自由贸易城邦——布拉佛斯，潘托斯，密尔；奴隶城邦——阿斯塔波，渊凯，弥林等等。&lt;/p&gt;
+                    <description>&lt;h1 id=&#34;1-ad来袭&#34;&gt;1、 AD、来袭&lt;/h1&gt;
+&lt;p&gt;在当今世界，广告已经成为商业和媒体领域中不可或缺的一部分，形成了一种广泛的现象。我们面临着前所未有的广告浪潮。&lt;br&gt;
+安卓端有一款名为「李跳跳」的APP,通过帮你点击跳过广告来减少广告对手机使用体验的影响。但前段时间因为不正当竞争被发函了，所以在本文开始之前先申明本文纯粹技术交流，禁止转载并且禁止商业用途。&lt;/p&gt;
+&lt;h1 id=&#34;2-safari作战会议&#34;&gt;2、 Safari作战会议&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;所需工具&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;脚本管理软件UserScripts&lt;/li&gt;
+&lt;li&gt;合适的脚本&lt;/li&gt;
+&lt;li&gt;AdGuard*&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;使用步骤&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;step1、AppSore下载脚本管理工具，这里建议使用UserScripts，开源免费且本人使用过程中没有出现任何bug。&lt;/li&gt;
+&lt;li&gt;step2、打开UserScripts，按照提示在浏览器中启动拓展。&lt;/li&gt;
+&lt;li&gt;step3、下载合适的脚本。去网页广告本人推荐使用&lt;a href=&#34;https://greasyfork.org/zh-CN/scripts/460743-%E5%B1%8F%E8%94%BD%E5%B9%BF%E5%91%8A-%E5%B1%8F%E8%94%BD%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A-%E7%99%BE%E5%BA%A6%E5%B9%BF%E5%91%8A-%E7%9F%A5%E4%B9%8E%E5%B9%BF%E5%91%8A-%E9%9A%90%E8%97%8F%E8%B0%B7%E6%AD%8C%E5%92%8C%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E5%A2%9E%E5%BC%BA%E7%99%BE%E5%BA%A6%E6%90%9C%E7%B4%A2%E7%BB%93%E6%9E%9C%E7%9A%84%E5%90%84%E7%A7%8D%E5%B9%BF%E5%91%8A%E7%AD%89%E7%AD%89-%E8%BF%87%E6%BB%A4%E6%89%80%E6%9C%89%E9%87%87%E7%94%A8%E8%B0%B7%E6%AD%8C%E8%81%94%E7%9B%9F%E5%92%8C%E7%99%BE%E5%BA%A6%E8%81%94%E7%9B%9F%E7%AD%89%E5%B9%BF%E5%91%8A%E8%81%94%E7%9B%9F%E7%9A%84%E5%B9%BF%E5%91%8A&#34;&gt;去百度、谷歌广告联盟脚本&lt;/a&gt;，我Chrome上也在使用该脚本。打开脚本源代码界面后，拓展中点击UserScripts脚本管理拓展，点击检测脚本按钮，之后安装脚本、启用脚本即可。&lt;/li&gt;
+&lt;li&gt;step4、安装Adguard，Adguard内置丰富的拦截器，拆箱即用。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上步骤进行完毕后搜索网页基本不会再有广告了。&lt;/p&gt;
 &lt;center&gt;
     &lt;img style=&#34;border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_map.jpg&#34;&gt;
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/去广告_效果图.jpg&#34;&gt;
     &lt;br&gt;
     &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;&#34;&gt;冰与火之歌世界地图&lt;/div&gt;
+    padding: 2px;&#34;&gt;左图为开脚本前 右图为开脚本后&lt;/div&gt;
 &lt;/center&gt;
-&lt;p&gt;冰与火之歌的主要故事发生在西部即&lt;em&gt;Westeros&lt;/em&gt;。&lt;/p&gt;
-&lt;h1 id=&#34;七大王国与九大家族&#34;&gt;七大王国与九大家族&lt;/h1&gt;
+# 3、 App作战会议
+**所需工具**
+- QuantumultX
+&lt;p&gt;本文分区在生活篇，所以只简单介绍使用，具体原理有时间会在技术篇介绍。
+&lt;strong&gt;使用步骤&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;step1、抄大神作业。直接引用配置文件&lt;a href=&#34;https://raw.githubusercontent.com/ddgksf2013/Profile/master/QuantumultX.conf&#34;&gt;墨鱼大神配置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;step2、开启mitm和rewirte开关。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;center&gt;
     &lt;img style=&#34;border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_westeros.jpg&#34;&gt;
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/QuantumultX.jpg&#34;&gt;
     &lt;br&gt;
     &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
     display: inline-block;
     color: #999;
-    padding: 2px;&#34;&gt;Westeros&lt;/div&gt;
+    padding: 2px;&#34;&gt;QuantumultX使用步骤&lt;/div&gt;
 &lt;/center&gt;
-&lt;h2 id=&#34;1-北境王国&#34;&gt;1 北境王国&lt;/h2&gt;
-&lt;p&gt;临冬城：史塔克家族，House Stark&lt;/p&gt;
-&lt;p&gt;家徽：冰原奔狼&lt;/p&gt;
-&lt;p&gt;族语：凛冬将至（Winter Is Coming）&lt;/p&gt;
-&lt;p&gt;城主：奈德.史塔克公爵，妻子凯特琳·徒利。&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_winterfell.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Stark家族&lt;/div&gt;
-&lt;/center&gt;
-&lt;h2 id=&#34;2-山谷王国&#34;&gt;2 山谷王国&lt;/h2&gt;
-&lt;p&gt;鹰巢城：艾林家族，House Arryn&lt;/p&gt;
-&lt;p&gt;家徽：新月猎鹰&lt;/p&gt;
-&lt;p&gt;族语：高如荣耀（As High as honor）&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_vale.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Arryn家族&lt;/div&gt;
-&lt;/center&gt;
-&lt;h2 id=&#34;3-河间王国&#34;&gt;3 河间王国&lt;/h2&gt;
-&lt;p&gt;奔流城：徒利家族，House Tully&lt;/p&gt;
-&lt;p&gt;家徽：越出水面的银鳟,底色为红蓝波纹。&lt;/p&gt;
-&lt;p&gt;族语:家族．责任．荣誉（Family, Duty, Honor）&lt;/p&gt;
-&lt;p&gt;城主：艾德慕·徒利伯爵&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_riverlands.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Tully家族&lt;/div&gt;
-&lt;/center&gt;
-&lt;h2 id=&#34;4-凯岩王国&#34;&gt;4 凯岩王国&lt;/h2&gt;
-&lt;p&gt;凯岩城：兰尼斯特家族，House Lannister&lt;/p&gt;
-&lt;p&gt;家徽：鲜红地上的金色咆吼猛狮&lt;/p&gt;
-&lt;p&gt;族语：听我怒吼（Hear me roar）&lt;/p&gt;
-&lt;p&gt;城主：泰温·兰尼斯特&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_rock.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Lannister家族&lt;/div&gt;
-&lt;/center&gt;
-&lt;h2 id=&#34;5-河湾王国&#34;&gt;5 河湾王国&lt;/h2&gt;
-&lt;p&gt;高庭城堡：提利尔家族，House Tyrell&lt;/p&gt;
-&lt;p&gt;家徽：金玫瑰&lt;/p&gt;
-&lt;p&gt;族语：生生不息（Growing Strong）&lt;/p&gt;
-&lt;p&gt;城主：梅斯·提利尔&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_reach.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Tyrell家族&lt;/div&gt;
-&lt;/center&gt;
-&lt;h2 id=&#34;6-风暴王国&#34;&gt;6 风暴王国&lt;/h2&gt;
-&lt;p&gt;风息堡：拜拉席恩家族，House Baratheon&lt;/p&gt;
-&lt;p&gt;家徽：黑色宝冠雄鹿&lt;/p&gt;
-&lt;p&gt;族语：怒火燎原（Ours is the Fury）&lt;/p&gt;
-&lt;p&gt;城主：蓝礼·拜拉席恩&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_storm.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Baratheon家族家徽&lt;/div&gt;
-&lt;/center&gt;
-&lt;h2 id=&#34;7-多恩王国&#34;&gt;7 多恩王国&lt;/h2&gt;
-&lt;p&gt;阳戟城：马泰尔家族，House Martell&lt;/p&gt;
-&lt;p&gt;家徽：一轮红日被金枪所贯穿&lt;/p&gt;
-&lt;p&gt;族语：不屈不挠（Unbent, Unbowed, Unbroken）&lt;/p&gt;
-&lt;p&gt;城主：道朗·纳梅洛斯·马泰尔&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_dorn.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Martell家族家徽&lt;/div&gt;
-&lt;/center&gt;
-&lt;h2 id=&#34;8-葛雷乔伊家族&#34;&gt;8 葛雷乔伊家族&lt;/h2&gt;
-&lt;p&gt;派克城 ：葛雷乔伊家族，House Greyjoy&lt;/p&gt;
-&lt;p&gt;家徽：金色海怪&lt;/p&gt;
-&lt;p&gt;族语：强取胜于苦耕（We Do Not Sow）&lt;/p&gt;
-&lt;p&gt;城主：巴隆·葛雷乔伊&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_greyjoy.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Greyjoy家族家徽&lt;/div&gt;
-&lt;/center&gt;
-&lt;h2 id=&#34;9-塔格利安家族&#34;&gt;9 塔格利安家族&lt;/h2&gt;
-&lt;p&gt;家徽：黑底红色的三头火龙，三个头分别代表伊耿和她的两个妹妹。&lt;/p&gt;
-&lt;p&gt;族语：血火同源（Blood and fire）&lt;/p&gt;
-&lt;p&gt;现任女王：丹妮莉丝·坦格利安&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_tagaryan.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Tagaryan家族家徽&lt;/div&gt;
-&lt;/center&gt;
-&lt;p&gt;最后附一张本人观剧时候的笔记。（不去网上搜的原因是怕剧透&lt;/p&gt;
-&lt;center&gt;
-    &lt;img style=&#34;border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
-    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_notes.jpg&#34;&gt;
-    &lt;br&gt;
-    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;&#34;&gt;Notes&lt;/div&gt;
-&lt;/center&gt;
+&lt;p&gt;本文写的比较简单琐碎，为本人闲的没事干所写，适合小白入门，当然QuantumultX的功能肯定不止于此，抓包、改写等等操作有很大的可玩性。后续将不定期更新QuantumultX的原理。&lt;/p&gt;
 </description>
                 
                 
@@ -453,6 +333,196 @@
 &lt;p&gt;F：下一帧&lt;/p&gt;
 &lt;p&gt;G：自定义&lt;/p&gt;
 &lt;p&gt;control+E截图&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>冰与火之歌-七大王国和九大家族</title>
+                <link>https://lychee-h.github.io/life/%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F_%E4%B8%83%E5%A4%A7%E7%8E%8B%E5%9B%BD%E4%B8%8E%E4%B9%9D%E5%A4%A7%E5%AE%B6%E6%97%8F/</link>
+                <guid isPermaLink="true">https://lychee-h.github.io/life/%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F_%E4%B8%83%E5%A4%A7%E7%8E%8B%E5%9B%BD%E4%B8%8E%E4%B9%9D%E5%A4%A7%E5%AE%B6%E6%97%8F/</guid>
+                <pubDate>Wed, 31 Jul 2019 22:23:46 &#43;0800</pubDate>
+                
+                
+                
+                    <description>&lt;p&gt;在“冰与火”的世界分里为西方大陆和东方大陆。西方大陆的北方是冰墙，隔开北方的冰雪世界；南方是七个王国组成的。而东方大陆则是巨大的草原和沙漠。&lt;/p&gt;
+&lt;p&gt;东方大陆有一些港口城市是自由贸易城邦——布拉佛斯，潘托斯，密尔；奴隶城邦——阿斯塔波，渊凯，弥林等等。&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_map.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;冰与火之歌世界地图&lt;/div&gt;
+&lt;/center&gt;
+&lt;p&gt;冰与火之歌的主要故事发生在西部即&lt;em&gt;Westeros&lt;/em&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;七大王国与九大家族&#34;&gt;七大王国与九大家族&lt;/h1&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_westeros.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Westeros&lt;/div&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;1-北境王国&#34;&gt;1 北境王国&lt;/h2&gt;
+&lt;p&gt;临冬城：史塔克家族，House Stark&lt;/p&gt;
+&lt;p&gt;家徽：冰原奔狼&lt;/p&gt;
+&lt;p&gt;族语：凛冬将至（Winter Is Coming）&lt;/p&gt;
+&lt;p&gt;城主：奈德.史塔克公爵，妻子凯特琳·徒利。&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_winterfell.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Stark家族&lt;/div&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;2-山谷王国&#34;&gt;2 山谷王国&lt;/h2&gt;
+&lt;p&gt;鹰巢城：艾林家族，House Arryn&lt;/p&gt;
+&lt;p&gt;家徽：新月猎鹰&lt;/p&gt;
+&lt;p&gt;族语：高如荣耀（As High as honor）&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_vale.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Arryn家族&lt;/div&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;3-河间王国&#34;&gt;3 河间王国&lt;/h2&gt;
+&lt;p&gt;奔流城：徒利家族，House Tully&lt;/p&gt;
+&lt;p&gt;家徽：越出水面的银鳟,底色为红蓝波纹。&lt;/p&gt;
+&lt;p&gt;族语:家族．责任．荣誉（Family, Duty, Honor）&lt;/p&gt;
+&lt;p&gt;城主：艾德慕·徒利伯爵&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_riverlands.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Tully家族&lt;/div&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;4-凯岩王国&#34;&gt;4 凯岩王国&lt;/h2&gt;
+&lt;p&gt;凯岩城：兰尼斯特家族，House Lannister&lt;/p&gt;
+&lt;p&gt;家徽：鲜红地上的金色咆吼猛狮&lt;/p&gt;
+&lt;p&gt;族语：听我怒吼（Hear me roar）&lt;/p&gt;
+&lt;p&gt;城主：泰温·兰尼斯特&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_rock.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Lannister家族&lt;/div&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;5-河湾王国&#34;&gt;5 河湾王国&lt;/h2&gt;
+&lt;p&gt;高庭城堡：提利尔家族，House Tyrell&lt;/p&gt;
+&lt;p&gt;家徽：金玫瑰&lt;/p&gt;
+&lt;p&gt;族语：生生不息（Growing Strong）&lt;/p&gt;
+&lt;p&gt;城主：梅斯·提利尔&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_reach.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Tyrell家族&lt;/div&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;6-风暴王国&#34;&gt;6 风暴王国&lt;/h2&gt;
+&lt;p&gt;风息堡：拜拉席恩家族，House Baratheon&lt;/p&gt;
+&lt;p&gt;家徽：黑色宝冠雄鹿&lt;/p&gt;
+&lt;p&gt;族语：怒火燎原（Ours is the Fury）&lt;/p&gt;
+&lt;p&gt;城主：蓝礼·拜拉席恩&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_storm.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Baratheon家族家徽&lt;/div&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;7-多恩王国&#34;&gt;7 多恩王国&lt;/h2&gt;
+&lt;p&gt;阳戟城：马泰尔家族，House Martell&lt;/p&gt;
+&lt;p&gt;家徽：一轮红日被金枪所贯穿&lt;/p&gt;
+&lt;p&gt;族语：不屈不挠（Unbent, Unbowed, Unbroken）&lt;/p&gt;
+&lt;p&gt;城主：道朗·纳梅洛斯·马泰尔&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_dorn.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Martell家族家徽&lt;/div&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;8-葛雷乔伊家族&#34;&gt;8 葛雷乔伊家族&lt;/h2&gt;
+&lt;p&gt;派克城 ：葛雷乔伊家族，House Greyjoy&lt;/p&gt;
+&lt;p&gt;家徽：金色海怪&lt;/p&gt;
+&lt;p&gt;族语：强取胜于苦耕（We Do Not Sow）&lt;/p&gt;
+&lt;p&gt;城主：巴隆·葛雷乔伊&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_greyjoy.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Greyjoy家族家徽&lt;/div&gt;
+&lt;/center&gt;
+&lt;h2 id=&#34;9-塔格利安家族&#34;&gt;9 塔格利安家族&lt;/h2&gt;
+&lt;p&gt;家徽：黑底红色的三头火龙，三个头分别代表伊耿和她的两个妹妹。&lt;/p&gt;
+&lt;p&gt;族语：血火同源（Blood and fire）&lt;/p&gt;
+&lt;p&gt;现任女王：丹妮莉丝·坦格利安&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_tagaryan.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Tagaryan家族家徽&lt;/div&gt;
+&lt;/center&gt;
+&lt;p&gt;最后附一张本人观剧时候的笔记。（不去网上搜的原因是怕剧透&lt;/p&gt;
+&lt;center&gt;
+    &lt;img style=&#34;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&#34; 
+    src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/权游_notes.jpg&#34;&gt;
+    &lt;br&gt;
+    &lt;div style=&#34;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&#34;&gt;Notes&lt;/div&gt;
+&lt;/center&gt;
 </description>
                 
                 
