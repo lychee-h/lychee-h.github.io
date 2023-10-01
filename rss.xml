@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Thu, 31 Aug 2023 16:05:59 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sun, 01 Oct 2023 14:02:03 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://lychee-h.github.io/rss.xml" />
         
@@ -64,9 +64,11 @@
     color: #999;
     padding: 2px;&#34;&gt;左图为开脚本前 右图为开脚本后&lt;/div&gt;
 &lt;/center&gt;
-# 3、 App作战会议
-**所需工具**
-- QuantumultX
+&lt;h1 id=&#34;3-app作战会议&#34;&gt;3、 App作战会议&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;所需工具&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;QuantumultX&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;本文分区在生活篇，所以只简单介绍使用，具体原理有时间会在技术篇介绍。
 &lt;strong&gt;使用步骤&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
