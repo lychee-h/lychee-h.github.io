@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-10-01T14:02:03&#43;08:00</updated>
+    <updated>2023-10-01T14:06:51&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -16,6 +16,46 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.115.0">Hugo</generator>
+        <entry>
+            <title type="text">逃不过的麦高芬-从2001：太空漫游中的黑石碑说起</title>
+            <link rel="alternate" type="text/html" href="https://lychee-h.github.io/life/%E9%BA%A6%E9%AB%98%E8%8A%AC/" />
+            <id>https://lychee-h.github.io/life/%E9%BA%A6%E9%AB%98%E8%8A%AC/</id>
+            <updated>2023-10-01T14:05:44&#43;08:00</updated>
+            <published>2023-10-01T13:24:25&#43;08:00</published>
+            
+            <summary type="html">麦高芬（英文：MacGuffin）是一个电影用语，指在电影中可以推展剧情的物件、人物……</summary>
+            
+                <content type="html">&lt;p&gt;麦高芬（英文：MacGuffin）是一个电影用语，指在电影中可以推展剧情的物件、人物、或者目标，例如一个众角色争夺的东西，而关于这个物件、人物、或目标的详细说明不一定重要，有些作品会有交代，有些作品则不会，只要是对电影中众角色很重要，可以让剧情发展即可算是麦高芬。&lt;/p&gt;
+&lt;p&gt;关于麦高芬，很久之前就想写一篇介绍的文章了，可惜本人比较懒，加上近期开学比较忙，直到这个国庆假期才有时间可以写一写。&lt;/p&gt;
+&lt;p&gt;说到麦高芬，不妨看一下希区柯克本人的解释。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;在英格兰的一列火车上面，两位旅客互相交谈。
+其中一位问：“对不起，先生，请问您在您头上行李架上的奇怪的包包是什么东西？”
+“喔，这个呀，这是一个麦高芬。”
+“是作什么用呢？”
+“目的是为了设陷阱补抓一些苏格兰山上的狮子。”
+“啊？？但是苏格兰山区没有狮子呀！”
+“喔，那就没有麦高芬了。”
+“所以你看，一个麦高芬即什么都不是。”
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;不得不说希区柯克是有点幽默在身上的。这个解释至少能说明两件事情，一是不要过度关注麦高芬，他可能会让整个故事偏离主题。二是如果麦高芬不合理，剧情无法成立，麦高芬也就失去他的意义了。&lt;/p&gt;
+&lt;p&gt;麦高芬介绍完毕，让我们说回2001：太空漫游。至于为什么是这部电影，因为我最近才和朋友讨论了一下库布里克，其实我最早想写麦高芬是因为碟中谍，碟中谍中几乎每一部都有麦高芬。在电影2001：太空漫游中，一共三次出现黑色石碑。说实话，这有些让人摸不清头脑。从地球到月球再到木星，黑色石碑一直吸引着人类，作为麦高芬，他推动着剧情的发展。整部电影从头到尾没有任何对黑色石碑的描述，他为何而来无人得知。但是，隐约着让人们觉得好像有外星文明的存在。这就是这部电影高明的地方了。如果依然止步在描写外星人，那么始终是跳不出人类视角的。而通过精准比例的1：4：9的黑色石碑，似乎能证明外星文明的存在。正因为你摸不清头脑，才更能说明外星文明视角的合理性。&lt;/p&gt;
+&lt;p&gt;当然了，一千个读者有一千个哈姆雷特，这只是我浅薄的看法。有人因为其中的最早人工智能反派喜欢这部电影，有人因为外星文明喜欢这部电影，而对我来说，最吸引我的仅仅是这块黑石碑。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;“谁能告诉我这部电影他妈的到底是在讲什么？”-罗克•赫德森
+“如果有人觉得完全弄懂了《2001：太空漫游》，那一定是我和库布里克弄错了。我们想要提出的问题远超过我们给出的答案。”-阿瑟•克拉克
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;最后用两个经典评论结尾，感谢观看，祝各位双节愉快！&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">广告「杀」完计划-iPhone/iPad端</title>
             <link rel="alternate" type="text/html" href="https://lychee-h.github.io/life/%E5%B9%BF%E5%91%8A%E6%9D%80%E5%AE%8C%E8%AE%A1%E5%88%92/" />
@@ -136,30 +176,6 @@
 &lt;p&gt;There was a merchant in Baghdad who sent his servant to market to buy provisions, and in a little while the servant came back, white and trembling, and said, “Master, just now when I was in the marketplace I was jostled by a woman in the crowd, and when I turned I saw it was Death that had jostled me. She looked at me and made a threatening gesture. Now, lend me your horse, and I will ride away from this city and avoid my fate. I will go to Samarra and there Death will not find me.”&lt;/p&gt;
 &lt;p&gt;The merchant lent him his horse, and the servant mounted it, and he dug his spurs in its flanks and as fast as the horse could gallop, he went.&lt;/p&gt;
 &lt;p&gt;Then the merchant went down to the marketplace and he saw Death disguised as a woman standing in the crowd, and he came to her and said, “Why did you make a threatening gesture to my servant when you saw him this morning?” “That was not a threatening gesture,” the woman said. “It was only an expression of surprise. I was astonished to see him in Baghdad, for I had an appointment with him tonight in Samarra.”&lt;/p&gt;
-</content>
-            
-            
-            
-            
-            
-                
-                    
-                
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Hello World</title>
-            <link rel="alternate" type="text/html" href="https://lychee-h.github.io/life/hello-world/" />
-            <id>https://lychee-h.github.io/life/hello-world/</id>
-            <updated>2023-07-09T20:56:17&#43;08:00</updated>
-            <published>2023-07-01T13:41:18&#43;08:00</published>
-            
-            <summary type="html">后续会整理一些生活类文章，等待施工中~</summary>
-            
-                <content type="html">&lt;p&gt;后续会整理一些生活类文章，等待施工中~&lt;/p&gt;
 </content>
             
             
