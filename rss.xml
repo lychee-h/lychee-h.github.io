@@ -23,10 +23,79 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 13 Oct 2023 11:16:53 &#43;0800</lastBuildDate>
+        <lastBuildDate>Tue, 17 Oct 2023 21:47:18 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://lychee-h.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Spring Task框架</title>
+                <link>https://lychee-h.github.io/tech/spring-task%E6%A1%86%E6%9E%B6/</link>
+                <guid isPermaLink="true">https://lychee-h.github.io/tech/spring-task%E6%A1%86%E6%9E%B6/</guid>
+                <pubDate>Mon, 16 Oct 2023 13:23:17 &#43;0800</pubDate>
+                
+                
+                
+                    <description>&lt;h1 id=&#34;1-介绍&#34;&gt;1 介绍&lt;/h1&gt;
+&lt;p&gt;Spring Task 是Spring框架提供的任务调度工具，可以按照约定的时间自动执行某个代码逻辑。&lt;/p&gt;
+&lt;p&gt;应用场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;信用卡每月还款提醒&lt;/li&gt;
+&lt;li&gt;火车票售票系统处理未支付订单&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-cron表达式&#34;&gt;2 cron表达式&lt;/h1&gt;
+&lt;p&gt;cron表达式其实就是一个字符串，通过cron表达式可以&lt;strong&gt;定义任务触发的时间&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;构成规则：分为6或7个域，由空格分隔开，每个域代表一个含义&lt;/p&gt;
+&lt;p&gt;每个域的含义分别为：秒、分钟、小时、日、月、周、年(可选)&lt;/p&gt;
+&lt;p&gt;举例：&lt;/p&gt;
+&lt;p&gt;2022年10月12日上午9点整 对应的cron表达式为：&lt;code&gt;0 0 9 12 10 ? 2022&lt;/code&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;秒&lt;/th&gt;
+&lt;th&gt;分钟&lt;/th&gt;
+&lt;th&gt;小时&lt;/th&gt;
+&lt;th&gt;日&lt;/th&gt;
+&lt;th&gt;月&lt;/th&gt;
+&lt;th&gt;周&lt;/th&gt;
+&lt;th&gt;年&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;9&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;10&lt;/td&gt;
+&lt;td&gt;?&lt;/td&gt;
+&lt;td&gt;2022&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&#34;https://cron.qqe2.com/&#34;&gt;cron表达式在线生成器&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;3-案例&#34;&gt;3 案例&lt;/h1&gt;
+&lt;p&gt;Spring Task使用步骤：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;导入maven坐标 spring-context（位于spring-starter）&lt;/li&gt;
+&lt;li&gt;启动类添加注解&lt;code&gt;@EnableScheduling&lt;/code&gt;开启任务调度&lt;/li&gt;
+&lt;li&gt;自定义定时任务类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;4-注解参数&#34;&gt;4 注解参数&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;@Scheduled(corn = ·&amp;quot;&amp;quot;)&lt;/code&gt;指定cron表达式即可。&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Spring Cache框架</title>
