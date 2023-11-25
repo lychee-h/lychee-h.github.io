@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-11-16T22:16:32&#43;08:00</updated>
+    <updated>2023-11-25T18:13:36&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -16,6 +16,141 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.115.0">Hugo</generator>
+        <entry>
+            <title type="text">SpringBoot自动配置原理</title>
+            <link rel="alternate" type="text/html" href="https://lychee-h.github.io/tech/springboot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE%E5%8E%9F%E7%90%86/" />
+            <id>https://lychee-h.github.io/tech/springboot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE%E5%8E%9F%E7%90%86/</id>
+            <updated>2023-11-25T18:13:16&#43;08:00</updated>
+            <published>2023-11-25T18:13:17&#43;08:00</published>
+            
+            <summary type="html">0 SpringBoot 核心思想：约定大于配置 1 依赖管理 **场景启动器。**场景启动器自动把这个场景的所……</summary>
+            
+                <content type="html">&lt;h1 id=&#34;0-springboot&#34;&gt;0 SpringBoot&lt;/h1&gt;
+&lt;p&gt;核心思想：&lt;strong&gt;约定大于配置&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;1-依赖管理&#34;&gt;1 依赖管理&lt;/h1&gt;
+&lt;p&gt;**场景启动器。**场景启动器自动把这个场景的所有核心依赖全部导入进来。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.boot&lt;span class=&#34;nt&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-boot-starter&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;strong&gt;父项目&lt;code&gt;spring-boot-starter-parent&lt;/code&gt;&lt;/strong&gt;，parent的父项目是&lt;code&gt;spring-boot-dependencies&lt;/code&gt;，起&lt;strong&gt;版本仲裁中心&lt;/strong&gt;的作用。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;dependencyManagement&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;&amp;lt;dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;nt&#34;&gt;&amp;lt;groupId&amp;gt;&lt;/span&gt;org.springframework.boot&lt;span class=&#34;nt&#34;&gt;&amp;lt;/groupId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;nt&#34;&gt;&amp;lt;artifactId&amp;gt;&lt;/span&gt;spring-boot-starter-web&lt;span class=&#34;nt&#34;&gt;&amp;lt;/artifactId&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		&lt;span class=&#34;nt&#34;&gt;&amp;lt;version&amp;gt;&lt;/span&gt;2.7.3&lt;span class=&#34;nt&#34;&gt;&amp;lt;/version&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nt&#34;&gt;&amp;lt;/dependency&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;&amp;lt;/dependencyManagement&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;对于第三方的jar包，boot父项目没有管理，需要&lt;strong&gt;自行声明&lt;/strong&gt;版本。&lt;/p&gt;
+&lt;h1 id=&#34;2-自动配置&#34;&gt;2 自动配置&lt;/h1&gt;
+&lt;h2 id=&#34;21-相关注解&#34;&gt;2.1 相关注解&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;组件注册&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@Configuration、@SpringBootConfiguration
+@Bean、@Scope
+@Controller、 @Service、@Repository、@Component
+@Import
+@ComponentScan
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;条件注解&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@ConditionalOnClass：如果类路径中存在这个类，则触发指定行为
+@ConditionalOnMissingClass：如果类路径中不存在这个类，则触发指定行为
+@ConditionalOnBean：如果容器中存在这个Bean（组件），则触发指定行为
+@ConditionalOnMissingBean：如果容器中不存在这个Bean（组件），则触发指定行为
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;属性绑定&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@ConfigurationProperties： 声明组件的属性和配置文件哪些前缀开始项进行绑定
+@EnableConfigurationProperties：快速注册注解：
+场景：SpringBoot默认只扫描自己主程序所在的包。如果导入第三方包，即使组件上标注了 @Component、@ConfigurationProperties 注解，也没用。因为组件都扫描不进来，此时使用这个注解就可以快速进行属性绑定并把组件注册进容器
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;22-自动配置流程细节梳理&#34;&gt;2.2 自动配置流程细节梳理&lt;/h1&gt;
+&lt;p&gt;**1、**导入&lt;code&gt;starter-web&lt;/code&gt;：导入了web开发场景&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;1、场景启动器导入了相关场景的所有依赖：&lt;code&gt;starter-json&lt;/code&gt;、&lt;code&gt;starter-tomcat&lt;/code&gt;、&lt;code&gt;springmvc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;2、每个场景启动器都引入了一个&lt;code&gt;spring-boot-starter&lt;/code&gt;，核心场景启动器。&lt;/li&gt;
+&lt;li&gt;3、&lt;strong&gt;核心场景启动器&lt;/strong&gt;引入了&lt;code&gt;spring-boot-autoconfigure&lt;/code&gt;包。&lt;/li&gt;
+&lt;li&gt;4、&lt;code&gt;spring-boot-autoconfigure&lt;/code&gt;里面囊括了所有场景的所有配置。&lt;/li&gt;
+&lt;li&gt;5、只要这个包下的所有类都能生效，那么相当于SpringBoot官方写好的整合功能就生效了。&lt;/li&gt;
+&lt;li&gt;6、SpringBoot默认却扫描不到 &lt;code&gt;spring-boot-autoconfigure&lt;/code&gt;下写好的所有&lt;strong&gt;配置类&lt;/strong&gt;。（这些&lt;strong&gt;配置类&lt;/strong&gt;给我们做了整合操作），&lt;strong&gt;默认只扫描主程序所在的包&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2&lt;/strong&gt;、主程序：&lt;code&gt;@SpringBootApplication&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;1、&lt;code&gt;@SpringBootApplication&lt;/code&gt;由三个注解组成&lt;code&gt;@SpringBootConfiguration&lt;/code&gt;、&lt;code&gt;@EnableAutoConfiguratio&lt;/code&gt;、&lt;code&gt;@ComponentScan&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2、SpringBoot默认只能扫描自己主程序所在的包及其下面的子包，扫描不到 &lt;code&gt;spring-boot-autoconfigure&lt;/code&gt;包中官方写好的&lt;strong&gt;配置类&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3、&lt;code&gt;@EnableAutoConfiguration&lt;/code&gt;：SpringBoot &lt;strong&gt;开启自动配置的核心&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;1 是由&lt;code&gt;@Import(AutoConfigurationImportSelector.class)&lt;/code&gt;提供功能：批量给容器中导入组件。&lt;/li&gt;
+&lt;li&gt;2 SpringBoot启动会默认加载 142个配置类。&lt;/li&gt;
+&lt;li&gt;3 这&lt;strong&gt;142个配置类&lt;/strong&gt;来自于&lt;code&gt;spring-boot-autoconfigure&lt;/code&gt;下 &lt;code&gt;META-INF/spring/**org.springframework.boot.autoconfigure.AutoConfiguration**.imports&lt;/code&gt;文件指定的&lt;/li&gt;
+&lt;li&gt;4 项目启动的时候利用 @Import 批量导入组件机制把 &lt;code&gt;autoconfigure&lt;/code&gt; 包下的142 &lt;code&gt;xxxxAutoConfiguration&lt;/code&gt;类导入进来（&lt;strong&gt;自动配置类&lt;/strong&gt;）&lt;/li&gt;
+&lt;li&gt;5 虽然导入了&lt;code&gt;142&lt;/code&gt;个自动配置类&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;4、按需生效：&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;ul&gt;
+&lt;li&gt;并不是这&lt;code&gt;142&lt;/code&gt;个自动配置类都能生效&lt;/li&gt;
+&lt;li&gt;每一个自动配置类，都有条件注解&lt;code&gt;@ConditionalOnxxx&lt;/code&gt;，只有条件成立，才能生效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;3、&lt;/strong&gt;&lt;code&gt;xxxxAutoConfiguration&lt;/code&gt;&lt;strong&gt;自动配置类&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;1、给容器中使用@Bean 放一堆组件。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;2、每个&lt;strong&gt;自动配置类&lt;/strong&gt;都可能有这个注解&lt;code&gt;@EnableConfigurationProperties(**ServerProperties**.class)&lt;/code&gt;，用来把配置文件中配的指定前缀的属性值封装到 &lt;code&gt;xxxProperties&lt;/code&gt;&lt;strong&gt;属性类&lt;/strong&gt;中&lt;/li&gt;
+&lt;li&gt;3、以Tomcat为例：把服务器的所有配置都是以&lt;code&gt;server&lt;/code&gt;开头的。配置都封装到了属性类中。&lt;/li&gt;
+&lt;li&gt;4、给&lt;strong&gt;容器&lt;/strong&gt;中放的所有&lt;strong&gt;组件&lt;/strong&gt;的一些&lt;strong&gt;核心参数&lt;/strong&gt;，都来自于&lt;code&gt;xxxProperties&lt;/code&gt;&lt;strong&gt;。&lt;/strong&gt;&lt;code&gt;xxxProperties&lt;/code&gt;&lt;strong&gt;都是和配置文件绑定。&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;只需要改配置文件的值，核心组件的底层参数都能修改&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;**4、**写业务，全程无需关心各种整合。&lt;/p&gt;
+&lt;h2 id=&#34;23-核心流程总结&#34;&gt;2.3 核心流程总结&lt;/h2&gt;
+&lt;p&gt;1、导入&lt;code&gt;starter&lt;/code&gt;，就会导入&lt;code&gt;autoconfigure&lt;/code&gt;包。&lt;/p&gt;
+&lt;p&gt;2、&lt;code&gt;autoconfigure&lt;/code&gt; 包里面 有一个文件 &lt;code&gt;META-INF/spring/**org.springframework.boot.autoconfigure.AutoConfiguration**.imports&lt;/code&gt;,里面指定的所有启动要加载的自动配置类。&lt;/p&gt;
+&lt;p&gt;3、@EnableAutoConfiguration 会自动的把上面文件里面写的所有&lt;strong&gt;自动配置类都导入进来。xxxAutoConfiguration 是有条件注解进行按需加载&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;4、&lt;code&gt;xxxAutoConfiguration&lt;/code&gt;给容器中导入一堆组件，组件都是从 &lt;code&gt;xxxProperties&lt;/code&gt;中提取属性值。&lt;/p&gt;
+&lt;p&gt;5、&lt;code&gt;xxxProperties&lt;/code&gt;又是和&lt;strong&gt;配置文件&lt;/strong&gt;进行了绑定。&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">SpringMVC</title>
             <link rel="alternate" type="text/html" href="https://lychee-h.github.io/tech/springmvc/" />
