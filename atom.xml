@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2023-11-29T15:21:46&#43;08:00</updated>
+    <updated>2023-11-29T15:26:12&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">兴趣使然的抓包练习</title>
             <link rel="alternate" type="text/html" href="https://lychee-h.github.io/tech/mitm/" />
             <id>https://lychee-h.github.io/tech/mitm/</id>
-            <updated>2023-11-29T15:21:31&#43;08:00</updated>
+            <updated>2023-11-29T15:25:49&#43;08:00</updated>
             <published>2023-11-29T15:17:10&#43;08:00</published>
             
             <summary type="html">1 MITM 中间人攻击（英语：Man-in-the-middle attack，缩写：MITM……</summary>
@@ -37,7 +37,7 @@
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;选取抓包目标，笔者以&lt;a href=&#34;https://apps.apple.com/cn/app/%E6%96%B0%E5%8A%A0%E5%9D%A1%E8%81%94%E5%90%88%E6%97%A9%E6%8A%A5-%E4%B8%93%E6%B3%A8%E6%97%B6%E6%94%BF%E6%8A%A5%E9%81%93%E4%B8%8E%E7%83%AD%E7%82%B9%E6%96%B0%E9%97%BB/id586156969&#34;&gt;联合早报&lt;/a&gt;为例。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img src=https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/mitm-zaobao2 width=20% /&gt;
+&lt;img src=https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/mitm-zaobao2.png width=20% /&gt;
 &lt;img src=https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/mitm-zaobao.png width=20% /&gt;
 &lt;p&gt;如图所示，顶部banner栏完全无意义，中间的问卷调查也有变成广告位的趋势。所以，笔者决定去除这两个牛皮藓。&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
