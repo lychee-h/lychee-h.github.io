@@ -23,10 +23,95 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Mon, 11 Dec 2023 21:11:39 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sun, 21 Jan 2024 18:27:23 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://lychee-h.github.io/rss.xml" />
         
+        
+            <item>
+                <title>HTTPS与中间人攻击</title>
+                <link>https://lychee-h.github.io/tech/https/</link>
+                <guid isPermaLink="true">https://lychee-h.github.io/tech/https/</guid>
+                <pubDate>Sun, 21 Jan 2024 18:22:00 &#43;0800</pubDate>
+                
+                
+                
+                    <description>&lt;h1 id=&#34;为什么需要https&#34;&gt;为什么需要HTTPS？&lt;/h1&gt;
+&lt;p&gt;HTTPS的产生是为了解决HTTP明文传输不安全的问题的。HTTP 比较严重的缺点就是不安全：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;通信使用明文（不加密），内容可能会被窃听。&lt;/li&gt;
+&lt;li&gt;不验证通信方的身份，因此有可能遭遇伪装。&lt;/li&gt;
+&lt;li&gt;无法证明报文的完整性，所以有可能已遭篡改。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;什么是https&#34;&gt;什么是HTTPS？&lt;/h1&gt;
+&lt;img src=https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/https_1.jpg width=60% /&gt;
+&lt;p&gt;HTTPS在 HTTP 与 TCP 层之间加入了 &lt;code&gt;SSL/TLS&lt;/code&gt; 协议，可以很好的解决了上述的风险：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;信息加密&lt;/strong&gt;：交互信息无法被窃取&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;校验机制&lt;/strong&gt;：无法篡改通信内容，篡改了就不能正常显示&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;身份证书&lt;/strong&gt;：证明你访问的网站就是你想访问的网站&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;https如何工作&#34;&gt;HTTPS如何工作？&lt;/h1&gt;
+&lt;p&gt;HTTPS基于HTTP协议，所以先要进行HTTP三次握手建立HTTP连接。之后进行TLS四次握手建立TLS连接。&lt;/p&gt;
+&lt;img src=https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/https_3.jpg width=60% /&gt;
+&lt;p&gt;HTTPS在身份验证阶段采用非对称加密，在数据传输阶段采用对称加密。因此在TLS四次握手阶段，采用非对称加密RSA算法。&lt;/p&gt;
+&lt;img src=https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/https_2.jpg width=60% /&gt;
+&lt;p&gt;如图所示，&lt;code&gt;p/q&lt;/code&gt;为一对密钥，经过&lt;code&gt;p&lt;/code&gt;加密的密文通过&lt;code&gt;q&lt;/code&gt;进行解密。反之亦然。&lt;/p&gt;
+&lt;img src=https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/https_4.jpg /&gt;
+&lt;p&gt;step1、客户端发送&lt;code&gt;client Hello&lt;/code&gt;报文，内含客户端支持的TLS版本,加密套件,&lt;strong&gt;第1随机数&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;step2、服务器端发送&lt;code&gt;Server Hello&lt;/code&gt;报文，内含确认使用的TLS版本,加密套件,&lt;strong&gt;第2随机数&lt;/strong&gt;。并且附带&lt;strong&gt;服务器证书&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;step3、客户端验&lt;strong&gt;证服务器证书&lt;/strong&gt;，并且提取出&lt;strong&gt;服务器公钥&lt;/strong&gt;，生成&lt;strong&gt;第3随机数pre_master_key&lt;/strong&gt;，采用&lt;strong&gt;服务器公钥加密&lt;/strong&gt;，发送到服务端。同时，客户端计算三个随机数得到&lt;strong&gt;会话密钥&lt;/strong&gt;，同时将迄今为止的通信内容生成一个摘要，通过&lt;strong&gt;会话密钥&lt;/strong&gt;加密后发送给服务器进行校验。&lt;/p&gt;
+&lt;p&gt;step4、服务端使用&lt;strong&gt;服务器私钥&lt;/strong&gt;解密得到&lt;strong&gt;第3随机数pre_master_key&lt;/strong&gt;，并通过同样算法得到&lt;strong&gt;会话密钥&lt;/strong&gt;，同时也生成摘要发送给客户端进行校验。&lt;/p&gt;
+&lt;p&gt;身份验证阶段结束后，此后采用&lt;strong&gt;会话密钥&lt;/strong&gt;进行对称加密传输数据。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Q&amp;amp;A&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Q：什么是服务器证书？&lt;/p&gt;
+&lt;p&gt;A：所谓的服务器证书，即经过CA私钥加密服务器公钥后形成的&lt;strong&gt;数字签名&lt;/strong&gt;+&lt;strong&gt;服务器公钥&lt;/strong&gt;。（加密细节此处不深究）&lt;/p&gt;
+&lt;p&gt;Q：为什么需要CA机构的介入？&lt;/p&gt;
+&lt;p&gt;A：CA(certificate authority)机构是进行验证服务器的真伪，CA机构将CA公钥内置在操作系统、浏览器，之后用&lt;strong&gt;公钥&lt;/strong&gt;解密服务器发来的&lt;strong&gt;服务器证书&lt;/strong&gt;验证合法性。验证合法后，就可以从中提取出&lt;strong&gt;服务器公钥&lt;/strong&gt;。&lt;/p&gt;
+&lt;img src=https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/https_5.jpg width=60% /&gt;
+&lt;h1 id=&#34;如何对https进行中间人攻击&#34;&gt;如何对HTTPS进行中间人攻击？&lt;/h1&gt;
+&lt;img src=https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/https_6.jpg /&gt;
+&lt;p&gt;从中间人攻击原理图可以看出，进行中间人攻击的关键点只有两个：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MITM Server如何伪装成真正的Server；&lt;/li&gt;
+&lt;li&gt;MITM Client如何伪装成真正的Client。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;关于第二点，由于大部分服务器不会检验客户端（可能只有网银这类会），所以我们不关注。&lt;/p&gt;
+&lt;p&gt;关于第一点，可以先分析一下如果正常MITM的流程是怎么样的。以访问&lt;code&gt;baidu.com&lt;/code&gt;为例。&lt;/p&gt;
+&lt;p&gt;MITM Server的处理方式是从第一个SSL/TLS握手包Client Hello中提取出域名&lt;a href=&#34;http://www.baidu.com/&#34;&gt;www.baidu.com&lt;/a&gt;，利用应用内置的CA证书创建&lt;a href=&#34;http://www.baidu.com/&#34;&gt;www.baidu.com&lt;/a&gt;域名的公钥和私钥。创建的公钥证书在SSL/TLS握手的过程中发给Client，Client收到公钥证书后会由系统会对此证书进行校验，判断是否是百度公司持有的证书，但很明显这个证书是抓包工具伪造的。为了能够让系统校验公钥证书时认为证书是真实有效的，我们需要将抓包应用内置的CA证书手动安装到系统中，所以HTTPS抓包一定要先安装CA证书。因此只要系统层面信任MTIM工具证书即可。&lt;/p&gt;
+&lt;p&gt;细节梳理如下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;创建密钥对： MITM服务器首先生成一对密钥，包括公钥和私钥。这对密钥是用于加密和解密通信的。
+生成证书签名请求（CSR）： 利用生成的密钥对，MITM服务器创建一个证书签名请求（CSR）。CSR包含有关目标域名（例如www.baidu.com）以及其他相关信息的请求。
+伪造证书： MITM服务器使用自己的私钥对CSR进行签名，生成一个伪造的证书。这个证书包含了目标域名和与之相关联的MITM服务器生成的公钥。值得注意的是，这个证书并未经过任何受信任的证书颁发机构签发，而是由MITM服务器自行签署的。
+建立连接： 当客户端尝试连接到目标域名（例如www.baidu.com）时，MITM服务器将伪造的证书发送给客户端，作为SSL/TLS握手的一部分。
+客户端校验证书： 客户端操作系统会尝试验证接收到的证书的合法性。由于证书是由MITM服务器伪造的，正常情况下客户端会产生证书错误。
+安装CA证书： 为了绕过证书错误，用户需要手动将MITM工具内置的CA证书安装到操作系统中。这样，系统就会将MITM工具标记为一个受信任的证书颁发机构。
+建立加密通信： 一旦客户端信任MITM服务器的伪造证书，SSL/TLS握手成功，加密通信随即建立。MITM服务器能够解密和查看加密的HTTPS通信。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;此时，TLS四次握手流程如下：&lt;/p&gt;
+&lt;p&gt;step1、客户端发送&lt;code&gt;client Hello&lt;/code&gt;报文，内含客户端支持的TLS版本,加密套件,&lt;strong&gt;第1随机数&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;step2、MITM服务器端发送&lt;code&gt;Server Hello&lt;/code&gt;报文，内含确认使用的TLS版本,加密套件,&lt;strong&gt;第2随机数&lt;/strong&gt;。并且附带&lt;strong&gt;服务器证书&lt;/strong&gt;。此时服务器证书由MITM服务器通过自己生成的私钥加密，同时公钥内容为MTIM服务器自己的公钥。&lt;/p&gt;
+&lt;p&gt;step3、客户端验&lt;strong&gt;证服务器证书&lt;/strong&gt;，由于在系统层面信任&lt;strong&gt;MITM服务器的CA证书&lt;/strong&gt;，此时验证通过。并且提取出&lt;strong&gt;服务器公钥&lt;/strong&gt;，生成&lt;strong&gt;第3随机数pre_master_key&lt;/strong&gt;，采用&lt;strong&gt;服务器公钥加密&lt;/strong&gt;，发送到服务端。同时，客户端计算三个随机数得到&lt;strong&gt;会话密钥&lt;/strong&gt;，同时将迄今为止的通信内容生成一个摘要，通过&lt;strong&gt;会话密钥&lt;/strong&gt;加密后发送给服务器进行校验。&lt;/p&gt;
+&lt;p&gt;step4、服务端使用&lt;strong&gt;服务器私钥&lt;/strong&gt;解密得到&lt;strong&gt;第3随机数pre_master_key&lt;/strong&gt;，并通过同样算法得到&lt;strong&gt;会话密钥&lt;/strong&gt;，同时也生成摘要发送给客户端进行校验。&lt;/p&gt;
+&lt;p&gt;身份验证阶段结束后，此后采用&lt;strong&gt;会话密钥&lt;/strong&gt;进行对称加密传输数据。&lt;/p&gt;
+&lt;p&gt;这也是&lt;a href=&#34;https://lychee-h.github.io/tech/mitm/&#34;&gt;抓包练习&lt;/a&gt;第一步安装CA证书并信任的原因。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Q&amp;amp;A&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Q：安卓用户如何安装CA证书进行抓包？&lt;/p&gt;
+&lt;p&gt;A：安卓用ios的区别是，安卓是不信任用户级证书的，需要root。&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Docker</title>
@@ -6508,7 +6593,7 @@
 &lt;h1 id=&#34;开区间闭区间问题&#34;&gt;开区间闭区间问题&lt;/h1&gt;
 &lt;p&gt;一般的，我们可以认为二分法代码有以下几步。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;声明初试变量。&lt;/li&gt;
+&lt;li&gt;声明初始变量。&lt;/li&gt;
 &lt;li&gt;进入非空循环区间&lt;/li&gt;
 &lt;li&gt;根据条件移动左右指针&lt;/li&gt;
 &lt;/ol&gt;
@@ -6580,7 +6665,7 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;带等号和不带等号if里面到底怎么写&#34;&gt;带等号和不带等号，if里面到底怎么写&lt;/h1&gt;
 &lt;p&gt;先说结论，关注循环不变量：L-1始终满足if里面的条件，R+1始终满足else里面的条件。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;关键不在于区间里的元素具有什么性质，而是区间外面的元素具有什么性质。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;**关键不在于区间里的元素具有什么性质，而是区间外面的元素具有什么性质。**此处的区间外面，亦可以是开区间端点。[灵感就像鼻尖稍纵即逝的香味，而世界就像风。2024/1/21留]&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
