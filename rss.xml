@@ -23,10 +23,40 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 23 Feb 2024 20:16:38 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sat, 24 Feb 2024 21:03:20 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://lychee-h.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Cookie、Session、Token</title>
+                <link>https://lychee-h.github.io/tech/cookie-session-token/</link>
+                <guid isPermaLink="true">https://lychee-h.github.io/tech/cookie-session-token/</guid>
+                <pubDate>Sat, 24 Feb 2024 21:02:23 &#43;0800</pubDate>
+                
+                
+                
+                    <description>&lt;h1 id=&#34;cookie&#34;&gt;Cookie&lt;/h1&gt;
+&lt;p&gt;cookie由服务器返回，保存在浏览器。后续客户端发送的请求会自动带上token实现自动登录等功能。cookie的保存与发送由浏览器自动实现，无需任何操作。&lt;/p&gt;
+&lt;h1 id=&#34;session&#34;&gt;Session&lt;/h1&gt;
+&lt;p&gt;若不想将数据保存在客户端，可以将数据保存在服务端，并生成一个随机数&lt;code&gt;key&lt;/code&gt;与数据关联，之后将&lt;code&gt;key&lt;/code&gt;返回给浏览器写入cookie。后续服务器可以根据&lt;code&gt;key&lt;/code&gt;查找出保存在服务器的内容。其中&lt;code&gt;key&lt;/code&gt;就是&lt;code&gt;session-id&lt;/code&gt;。session的本质还是cookie，区别就是会话数据全部保存在服务器，客户端只保留&lt;code&gt;session-id&lt;/code&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;token&#34;&gt;Token&lt;/h1&gt;
+&lt;p&gt;服务器存过多数据或者是分布式服务器场景不适合采用session形式，因此还是希望将Token保存到用户端。此外除web以外没有cookie机制，由客户端将&lt;code&gt;&amp;quot;session-id&amp;quot;&lt;/code&gt;在存储系统保持起来，并改名为Token。&lt;/p&gt;
+&lt;p&gt;JWT技术就是一种Token技术。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/lychee-h/lychee-h.github.io/master/images/cookie.png&#34; alt=&#34;image-20240224205114189&#34;&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>centos时间与主机时间不一致报错问题</title>
