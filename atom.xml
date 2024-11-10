@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2024-10-06T20:05:50&#43;08:00</updated>
+    <updated>2024-11-10T18:33:25&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -605,7 +605,7 @@
             <title type="text">面向对象程序设计圣经：SOLID设计原则</title>
             <link rel="alternate" type="text/html" href="https://lychee-h.github.io/tech/solid%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/" />
             <id>https://lychee-h.github.io/tech/solid%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</id>
-            <updated>2024-10-06T17:50:35&#43;08:00</updated>
+            <updated>2024-11-10T18:32:58&#43;08:00</updated>
             <published>2024-10-05T19:51:21&#43;08:00</published>
             
             <summary type="html">面向对象程序设计圣经：SOLID设计原则 Single Responsibility Principle 单一职责 Open-Closed Principle 开闭原则 Liskov Substitution Principle 里氏替换原则……</summary>
@@ -626,21 +626,27 @@
 &lt;p&gt;对扩展开放，对修改关闭。&lt;/p&gt;
 &lt;p&gt;要么继承，要么注入，不轻易修改已经写好的类。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;继承拓展
+&lt;li&gt;继承拓展：通过新建子类继承父类，改写方法
 &lt;ul&gt;
 &lt;li&gt;优点：实现简单、直观&lt;/li&gt;
 &lt;li&gt;缺点：改写父类方法，容易违背里氏替换原则&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;构造拓展：基类不直接实现具体细节，细节由构造注入决定&lt;/li&gt;
+&lt;li&gt;构造拓展：新建其他功能实现类进行注入
+&lt;ul&gt;
+&lt;li&gt;原则：基类不直接实现具体细节，细节由构造注入决定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;liskov-substitution-principle-里氏替换原则&#34;&gt;Liskov Substitution Principle 里氏替换原则&lt;/h2&gt;
 &lt;p&gt;子类可以替换父类，并且替换后系统结果一致。&lt;/p&gt;
 &lt;p&gt;两个基本要求：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;输入输出一致，继承的方法一律不变，有特殊需求令起一个方法实现&lt;/li&gt;
+&lt;li&gt;输入输出一致，继承的方法一律不变，有特殊需求另起一个方法实现&lt;/li&gt;
 &lt;li&gt;子类不产生副作用&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;law-of-demeter-迪米特法则&#34;&gt;Law of Demeter 迪米特法则&lt;/h2&gt;
+&lt;p&gt;目的在于降低类之间的耦合。由于每个对象之间尽量减少对其他类的了解，容易使得系统之间的功能模块独立，相互之间不存在或很少有依赖关系。&lt;/p&gt;
 &lt;h2 id=&#34;interface-segregation-principle-接口分离原则&#34;&gt;Interface Segregation Principle 接口分离原则&lt;/h2&gt;
 &lt;p&gt;接口实现方不应该被迫实现用不上的方法。&lt;/p&gt;
 &lt;p&gt;单个接口的方法数尽可能少。&lt;/p&gt;
