@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">Henry</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2024-11-10T19:57:37&#43;08:00</updated>
+    <updated>2024-11-10T23:07:46&#43;08:00</updated>
     <id>https://lychee-h.github.io/</id>
     <link rel="alternate" type="text/html" href="https://lychee-h.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://lychee-h.github.io/atom.xml" />
@@ -16,6 +16,51 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.115.0">Hugo</generator>
+        <entry>
+            <title type="text">Java SPI原理和实现</title>
+            <link rel="alternate" type="text/html" href="https://lychee-h.github.io/tech/java-spi%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E8%B7%B5/" />
+            <id>https://lychee-h.github.io/tech/java-spi%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E8%B7%B5/</id>
+            <updated>2024-11-10T23:07:38&#43;08:00</updated>
+            <published>2024-11-10T20:18:45&#43;08:00</published>
+            
+            <summary type="html">概念和术语 SPI：Service Provider Interface SPI从Java 6开始引入，是一种基于Class……</summary>
+            
+                <content type="html">&lt;h2 id=&#34;概念和术语&#34;&gt;概念和术语&lt;/h2&gt;
+&lt;p&gt;SPI：&lt;strong&gt;S&lt;/strong&gt;ervice &lt;strong&gt;P&lt;/strong&gt;rovider &lt;strong&gt;I&lt;/strong&gt;nterface&lt;/p&gt;
+&lt;p&gt;SPI从Java 6开始引入，是一种基于ClassLoader来发现并加载服务的机制。&lt;/p&gt;
+&lt;p&gt;一个标准的SPI由3个组件构成，分别是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Service ： 一个公开的接口或者是抽象类，定义了一个抽象的功能模块。&lt;/li&gt;
+&lt;li&gt;Service Provider ：Service接口的一个实现类。&lt;/li&gt;
+&lt;li&gt;ServiceLoader ：SPI机制中的核心组件，负责在运行时发现并加载Service Provider。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;运行流程&#34;&gt;运行流程&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CStudy%5CBlog%5Cpublic%5Cimages%5Cimage-20241110204657904.png&#34; alt=&#34;image-20241110205425506&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Application应用程序不关注Service的具体实现，只需要和Service接口交互。&lt;/p&gt;
+&lt;h2 id=&#34;案例以jdbc为例&#34;&gt;案例：以JDBC为例&lt;/h2&gt;
+&lt;p&gt;JDBC，全称是&lt;strong&gt;J&lt;/strong&gt;ava &lt;strong&gt;D&lt;/strong&gt;ata&lt;strong&gt;B&lt;/strong&gt;ase &lt;strong&gt;C&lt;/strong&gt;onnectivity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JDBC即使用Java语言来访问数据库的一套API&lt;/li&gt;
+&lt;li&gt;每个数据库厂商会提供各自的JDBC实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CStudy%5CBlog%5Cpublic%5Cimages%5Cimage-20241110210328236.png&#34; alt=&#34;image-20241110210328236&#34;&gt;&lt;/p&gt;
+&lt;p&gt;处理流程：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CStudy%5CBlog%5Cpublic%5Cimages%5C20611a93994f9b357fc4b82e9043d29.jpg&#34; alt=&#34;20611a93994f9b357fc4b82e9043d29&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CStudy%5CBlog%5Cpublic%5Cimages%5C7ab2c92b2424825ea24a3754081ac53.jpg&#34; alt=&#34;7ab2c92b2424825ea24a3754081ac53&#34;&gt;&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">设计模式</title>
             <link rel="alternate" type="text/html" href="https://lychee-h.github.io/tech/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-day01/" />

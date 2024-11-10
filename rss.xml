@@ -23,10 +23,54 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sun, 10 Nov 2024 19:57:37 &#43;0800</lastBuildDate>
+        <lastBuildDate>Sun, 10 Nov 2024 23:07:46 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://lychee-h.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Java SPI原理和实现</title>
+                <link>https://lychee-h.github.io/tech/java-spi%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E8%B7%B5/</link>
+                <guid isPermaLink="true">https://lychee-h.github.io/tech/java-spi%E7%9A%84%E5%8E%9F%E7%90%86%E5%92%8C%E5%AE%9E%E8%B7%B5/</guid>
+                <pubDate>Sun, 10 Nov 2024 20:18:45 &#43;0800</pubDate>
+                
+                
+                
+                    <description>&lt;h2 id=&#34;概念和术语&#34;&gt;概念和术语&lt;/h2&gt;
+&lt;p&gt;SPI：&lt;strong&gt;S&lt;/strong&gt;ervice &lt;strong&gt;P&lt;/strong&gt;rovider &lt;strong&gt;I&lt;/strong&gt;nterface&lt;/p&gt;
+&lt;p&gt;SPI从Java 6开始引入，是一种基于ClassLoader来发现并加载服务的机制。&lt;/p&gt;
+&lt;p&gt;一个标准的SPI由3个组件构成，分别是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Service ： 一个公开的接口或者是抽象类，定义了一个抽象的功能模块。&lt;/li&gt;
+&lt;li&gt;Service Provider ：Service接口的一个实现类。&lt;/li&gt;
+&lt;li&gt;ServiceLoader ：SPI机制中的核心组件，负责在运行时发现并加载Service Provider。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;运行流程&#34;&gt;运行流程&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CStudy%5CBlog%5Cpublic%5Cimages%5Cimage-20241110204657904.png&#34; alt=&#34;image-20241110205425506&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Application应用程序不关注Service的具体实现，只需要和Service接口交互。&lt;/p&gt;
+&lt;h2 id=&#34;案例以jdbc为例&#34;&gt;案例：以JDBC为例&lt;/h2&gt;
+&lt;p&gt;JDBC，全称是&lt;strong&gt;J&lt;/strong&gt;ava &lt;strong&gt;D&lt;/strong&gt;ata&lt;strong&gt;B&lt;/strong&gt;ase &lt;strong&gt;C&lt;/strong&gt;onnectivity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JDBC即使用Java语言来访问数据库的一套API&lt;/li&gt;
+&lt;li&gt;每个数据库厂商会提供各自的JDBC实现&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CStudy%5CBlog%5Cpublic%5Cimages%5Cimage-20241110210328236.png&#34; alt=&#34;image-20241110210328236&#34;&gt;&lt;/p&gt;
+&lt;p&gt;处理流程：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CStudy%5CBlog%5Cpublic%5Cimages%5C20611a93994f9b357fc4b82e9043d29.jpg&#34; alt=&#34;20611a93994f9b357fc4b82e9043d29&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;C:%5CStudy%5CBlog%5Cpublic%5Cimages%5C7ab2c92b2424825ea24a3754081ac53.jpg&#34; alt=&#34;7ab2c92b2424825ea24a3754081ac53&#34;&gt;&lt;/p&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>设计模式</title>
